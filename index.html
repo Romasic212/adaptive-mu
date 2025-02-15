@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <button id="theme-toggle">Переключить тему</button>
+
+    <header>
+        <nav>
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Поиск...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+
+        </nav>
+    </header>
+    <div id="search-results"></div>
+    <div class="predmet-block" onclick="window.location.href='matan.html'">
+        <div class="predmet-header">
+            <h1>Матан</h1>
+        </div>
+    </div>
+
+    <div class="predmet-block" onclick="location.href='/history.html'">
+        <div class="predmet-header">
+            <h1>История</h1>
+        </div>
+    </div>
+    <div class="predmet-block" onclick="location.href='/russian.html'">
+        <div class="predmet-header">
+            <h1>Русский язык</h1>
+        </div>
+    </div>
+    <div class="predmet-block" onclick="location.href='/physics.html'">
+        <div class="predmet-header">
+            <h1>Физика</h1>
+        </div>
+    </div>
+
+    <div class="predmet-block" onclick="location.href='/info.html'">
+        <div class="predmet-header">
+            <h1>Инфа</h1>
+        </div>
+    </div>
+
+    <div class="predmet-block" onclick="location.href='/obzh.html'">
+        <div class="predmet-header">
+            <h1>ОБЖ</h1>
+        </div>
+    </div>
+
+
+    <script src="./core.js"></script>
+    <script src="./search.js"></script>
+
+</body>
+
+</html>
